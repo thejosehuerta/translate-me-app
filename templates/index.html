@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>TranslateMe</title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <h1 style="font-size:5vw">TranslateMe</h1>
+    </div>
+
+
+        <div class="split left"> 
+            <div class="centered">
+                <!-- Every section is separated into rows -->
+                <div class="row">
+                    <form action="/" method="POST">
+                        <div class="column" style="background-color:#e4cdcd;">
+                            <h3>Enter your text here:</h3>
+                            <textarea type="text" name="input" rows="5" cols="50" placeholder="Begin typing...">{{ input }}</textarea>
+                        </div>
+
+                        <div class="column" style="background-color:#dac2c2;">
+                            <h3>Click 'Translate' to translate your selected language!</h3>
+                            
+                                <div class="col text-left">
+                                    <label for="Language">Select your language</label>
+                                    <input type="text" name="language" id="language" list="langslist">
+                                    <datalist readonly id="langslist">
+                                         {% for language in langs %}
+                                         <option value="{{ language }}">{{ language }}</option>
+                                        {% endfor %}
+                                    </datalist>
+
+                                </div>  
+
+                                <input type="submit"  class="btn btn-info" value="Translate" id="trans_btn">
+
+                            </div>
+
+                        <div class="column" style="background-color:#e4cdcd;">
+                            <h3>Your translated text:</h3>
+                            <textarea readonly type="text" name="output" rows="5" cols="50" placeholder="Waiting...">{{ trans }} </textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</body>
+</html>

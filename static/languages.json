@@ -1,0 +1,346 @@
+{
+  "languages": [
+    {
+      "code": "af",
+      "language": "afrikaans",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "sq",
+      "language": "albanian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "am",
+      "language": "amharic",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "ar",
+      "language": "arabic",
+      "category": 5,
+      "hours": 2200
+    },
+    {
+      "code": "hy",
+      "language": "armenian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "az",
+      "language": "azerbaijani",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "bn",
+      "language": "bengali",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "bs",
+      "language": "bosnian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "bg",
+      "language": "bulgarian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "zh-cn",
+      "language": "chinese",
+      "category": 5,
+      "hours": 2200
+    },
+    {
+      "code": "hr",
+      "language": "croatian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "cs",
+      "language": "czech",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "da",
+      "language": "danish",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "nl",
+      "language": "dutch",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "et",
+      "language": "estonian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "fi",
+      "language": "finnish",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "fr",
+      "language": "french",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "ka",
+      "language": "georgian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "de",
+      "language": "german",
+      "category": 2,
+      "hours": 750
+    },
+    {
+      "code": "el",
+      "language": "greek",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "iw",
+      "language": "hebrew",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "he",
+      "language": "hebrew",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "hi",
+      "language": "hindi",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "hu",
+      "language": "hungarian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "is",
+      "language": "icelandic",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "id",
+      "language": "indonesian",
+      "category": 3,
+      "hours": 900
+    },
+    {
+      "code": "it",
+      "language": "italian",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "ja",
+      "language": "japanese",
+      "category": 5,
+      "hours": 2200
+    },
+    {
+      "code": "km",
+      "language": "khmer",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "ko",
+      "language": "korean",
+      "category": 5,
+      "hours": 2200
+    },
+    {
+      "code": "lo",
+      "language": "lao",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "lv",
+      "language": "latvian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "lt",
+      "language": "lithuanian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "mk",
+      "language": "macedonian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "mn",
+      "language": "mongolian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "ne",
+      "language": "nepali",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "no",
+      "language": "norwegian",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "ps",
+      "language": "pashto",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "pl",
+      "language": "polish",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "pt",
+      "language": "portuguese",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "ro",
+      "language": "romanian",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "ru",
+      "language": "russian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "sr",
+      "language": "serbian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "si",
+      "language": "sinhala",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "sk",
+      "language": "slovak",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "sl",
+      "language": "slovenian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "es",
+      "language": "spanish",
+      "category": 1,
+      "hours": 575
+    },
+    {
+      "code": "sw",
+      "language": "swahili",
+      "category": 3,
+      "hours": 900
+    },
+    {
+      "code": "sv",
+      "language": "swedish",
+      "category": 1,
+      "hours": 600
+    },
+    {
+      "code": "th",
+      "language": "thai",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "tr",
+      "language": "turkish",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "uk",
+      "language": "ukrainian",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "ur",
+      "language": "urdu",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "uz",
+      "language": "uzbek",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "vi",
+      "language": "vietnamese",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "xh",
+      "language": "xhosa",
+      "category": 4,
+      "hours": 1100
+    },
+    {
+      "code": "zu",
+      "language": "zulu",
+      "category": 4,
+      "hours": 1100
+    }
+  ]
+}

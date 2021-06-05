@@ -4,57 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
     <title>TranslateMe</title>
 </head>
 <body>
-    <!-- Header -->
-    <div class="header">
-        <h1 style="font-size:5vw">TranslateMe</h1>
+    <!-- header -->
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
+        <div class="container">
+          <h1 style="font-size: 50px;">TranslateMe</h1>      
+        </div>
     </div>
 
-
-        <div class="split left"> 
-            <div class="centered">
-                <!-- Every section is separated into rows -->
-                <div class="row">
-                    <form action="/" method="POST">
-                        <div class="column" style="background-color:#e4cdcd;">
-                            <h3>Enter your text here:</h3>
-                            <textarea type="text" name="input" rows="5" cols="50" placeholder="Begin typing...">{{ input }}</textarea>
-                        </div>
-
-                        <div class="column" style="background-color:#dac2c2;">
-                            <h3>Click 'Translate' to translate your selected language!</h3>
-                            
-                                <div class="col text-left">
-                                    <label for="Language">Select your language</label>
-                                    <input type="text" name="language" id="language" list="langslist">
-                                    <datalist readonly id="langslist">
-                                         {% for language in langs %}
-                                         <option value="{{ language }}">{{ language }}</option>
-                                        {% endfor %}
-                                    </datalist>
-
-                                </div>  
-
-                                <input type="submit"  class="btn btn-info" value="Translate" id="trans_btn">
-
+    <div class="container-fluid" id="output">    
+        <div class="row">
+            <!-- Left-hand side column -->
+            <div class="col-md bg-light">
+                <!-- title -->
+                <div class="d-flex p-2 bg-secondary text-white">
+                    <h2>Language Translator</h2>                    
+                </div>
+                <!-- translator -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <form action="/" method="POST" id="trans_form">
+                            <!-- input textarea -->
+                            <div class="col" style="padding: 15px;">
+                                <h3>Enter your text here:</h3>
+                                <textarea type="text" name="input" rows="5" cols="50" placeholder="Begin typing...">{{ input }}</textarea>
                             </div>
-
-                        <div class="column" style="background-color:#e4cdcd;">
-                            <h3>Your translated text:</h3>
-                            <textarea readonly type="text" name="output" rows="5" cols="50" placeholder="Waiting...">{{ trans }} </textarea>
-                        </div>
-                    </form>
+                            <!-- Separator -->
+                            <hr>
+                            <div class="w-100"></div>
+                            <!-- language selector -->
+                            <div class="col" style="padding: 15px;">
+                                <h3>Select language:</h3>
+                                <select name="language" id="choices1" list="langslist" class="w-100">
+                                    <datalist readonly id="langslist">
+                                        {% for language in langs %}
+                                            <option value="{{ language }}">{{ language }}</option>
+                                        {% endfor %}
+                                    </datalist> 
+                                </select>                             
+                                <input type="submit" class="btn btn-dark" value="Translate" id="trans_btn" data-toggle="tooltip" title="Click here to translate your text to the selected language!">
+                                
+                            </div>    
+                            <!-- Separator -->
+                            <hr>
+                            <div class="w-100"></div>
+                            <!-- output textarea -->
+                            <div class="col" style="padding: 15px;">
+                                <h3>{{ lang_label }}</h3>
+                                <textarea readonly type="text" name="output" rows="5" cols="50" placeholder="Waiting...">{{ trans }} </textarea>
+                            </div>
+                        
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
+            <!-- end left-side column -->
 
+            <!-- Right-hand side column -->
+            <div class="col-lg bg-light">
+                <!-- title -->
+                <div class="d-flex p-2 bg-secondary text-white">
+                    <h2>How Long Would It Take to Learn a Language?</h2>                    
+                </div>
+                <!-- graph creator -->
+                <div class="container-fluid" style="padding: 15px;">
+                    <div class="row">
+                        <form action="/chart" method="POST" id="chart_form"> 
+                            <div class="col-md"> 
+                                <h5>Select two or more languages to compare them in a chart:</h5>
+                                <select name="lang_values" list="langslist" id="choices2" placeholder="Select languages" multiple>
+                                    <datalist readonly id="langslist">
+                                        {% for language in langs %}
+                                            <option value="{{ language }}">{{ language }}</option>
+                                        {% endfor %}
+                                    </datalist> 
+                                </select> 
 
+                                <h5>Select chart type:</h5>
+                                <select name="chart_type" list="chart_type" id="choices1" placeholder="Bar, Pie, etc.">
+                                    <datalist readonly id="chart_type">
+                                        <option value="pie">Pie</option>
+                                        <option value="doughnut">Doughnut</option>
+                                        <option value="bar">Bar</option>
+                                        <option value="horizontalBar">Horizontal Bar</option>
+                                        <option value="line">Line</option>
+                                        <option value="radar">Radar</option>
+                                        <option value="polarArea">Polar Area</option>     
+                                    </datalist> 
+                                </select> 
+                                <input type="submit" class="btn btn-dark" value="Generate" id="chart_btn" data-toggle="tooltip" title="Click here to generate your chart!">
+                                <hr>
+                            </div>
 
+                            <iframe id="chart_iframe"
+                                width="100%"
+                                height="350"
+                                src="{{ url }}">
+                            </iframe>
+                        </form>      
+                    </div>  
+                </div>
+            </div> <!-- end right-side column -->
+        </div> <!-- end main row -->
+    </div>  <!-- end main container -->
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 
 </body>
 </html>

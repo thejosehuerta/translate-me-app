@@ -1,6 +1,12 @@
 {
   "languages": [
     {
+      "code": "-",
+      "language": "-",
+      "category": 0,
+      "hours": 0
+    },
+    {
       "code": "af",
       "language": "afrikaans",
       "category": 1,
@@ -89,6 +95,12 @@
       "language": "estonian",
       "category": 4,
       "hours": 1100
+    },
+    {
+      "code": "en",
+      "language": "english",
+      "category": 1,
+      "hours": 575
     },
     {
       "code": "fi",

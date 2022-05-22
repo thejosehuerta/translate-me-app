@@ -27,9 +27,9 @@ By calling an [extrenal chart creation service](https://github.com/thejosehuerta
   
 | ![image](https://user-images.githubusercontent.com/44957830/169720874-12e10dfd-0abf-4e34-b3f6-61330baef29c.png "Different Languages Chart") |
 |:--:|
-| *Different languages chart with Italian selected * |
+| *Different languages chart with Italian selected* |
 
-The hours it would take to learn each language was provided by [Effective Language Learning](https://effectivelanguagelearning.com/language-guide/language-difficulty/)
+The hours it would take to learn each language was provided by [Effective Language Learning](https://effectivelanguagelearning.com/language-guide/language-difficulty/).
 
 # Tutorial
 Below is the video tutorial on how to use this website with a timestamp description below. 

@@ -1,7 +1,7 @@
 # TranslateMe
-| ![image](https://user-images.githubusercontent.com/44957830/169717511-1cb84b81-ec4b-4af9-b5aa-dfbd1d8d49bf.png "TranslateMe") | ![image](https://user-images.githubusercontent.com/44957830/169717633-da17dcde-004e-4275-b468-45ddc54154ee.png) |
-|:--:|:--:|
-| *Language translator* | *Language comparor* |
+| ![image](https://user-images.githubusercontent.com/44957830/169717511-1cb84b81-ec4b-4af9-b5aa-dfbd1d8d49bf.png "TranslateMe") | 
+|:--:|
+| *Language translator* | 
 
 # Website
 To visit this website, go to http://thejosehuerta.pythonanywhere.com/

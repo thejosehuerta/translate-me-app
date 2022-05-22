@@ -29,21 +29,21 @@ By calling an [extrenal chart creation service](https://github.com/thejosehuerta
 |:--:|
 | *Different languages chart with Italian selected * |
 
+The hours it would take to learn each language was provided by [Effective Language Learning](https://effectivelanguagelearning.com/language-guide/language-difficulty/)
+
 # Tutorial
 Below is the video tutorial on how to use this website with a timestamp description below. 
   
+https://user-images.githubusercontent.com/44957830/169721175-d94502fd-8d95-4f4d-892c-4cf1f008ef2f.mp4
+
+<details><summary>Timestamps</summary>
+  
+| Time | Description | 
+|:--|:--| 
+| 0:01:00 | Test |
+  
+</details>
 
 
-
-
-
-
-
-
-
-
-## Where does this app get its values from?
-
-[Here](https://effectivelanguagelearning.com/language-guide/language-difficulty/)
 
 

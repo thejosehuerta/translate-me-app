@@ -23,7 +23,7 @@ translated phrase in JSON which can then be utilized by any extrernal applicatio
 | *API endpoint showing returned JSON* |
   
 ## Chart
-By calling an [extrenal chart creation service](https://github.com/thejosehuerta/chart-me-app), this website generates a chart of chosen languages, comparing how long each one would take to learn.
+By calling an [extrenal chart creation service](https://github.com/thejosehuerta/chart-me-app), this website generates a chart of chosen languages. Each language will be a unique color and their size will represent the hours it would take to learn them.
   
 | ![image](https://user-images.githubusercontent.com/44957830/169720874-12e10dfd-0abf-4e34-b3f6-61330baef29c.png "Different Languages Chart") |
 |:--:|
@@ -32,7 +32,7 @@ By calling an [extrenal chart creation service](https://github.com/thejosehuerta
 The hours it would take to learn each language was provided by [Effective Language Learning](https://effectivelanguagelearning.com/language-guide/language-difficulty/).
 
 # Tutorial
-Below is the video tutorial on how to use this website with a timestamp description below. 
+Below is the video tutorial on how to use this website, along with a timestamp description. 
   
 https://user-images.githubusercontent.com/44957830/169721175-d94502fd-8d95-4f4d-892c-4cf1f008ef2f.mp4
 
@@ -40,7 +40,14 @@ https://user-images.githubusercontent.com/44957830/169721175-d94502fd-8d95-4f4d-
   
 | Time | Description | 
 |:--|:--| 
-| 0:01:00 | Test |
+| 00:00 | Introduction |
+| 00:18 | Language translator section |
+| 00:57 | API endpoint |
+| 01:30 | Language charter |
+
+  
+  
+  
   
 </details>
 

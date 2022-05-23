@@ -34,7 +34,7 @@ The hours it would take to learn each language was provided by [Effective Langua
 # Tutorial
 Below is the video tutorial on how to use this website, along with a timestamp description. 
   
-https://user-images.githubusercontent.com/44957830/169721175-d94502fd-8d95-4f4d-892c-4cf1f008ef2f.mp4
+https://user-images.githubusercontent.com/44957830/169876625-da2252fd-c280-4c63-a282-2dac9d5f7491.mp4
 
 <details><summary>Timestamps</summary>
   
@@ -44,13 +44,5 @@ https://user-images.githubusercontent.com/44957830/169721175-d94502fd-8d95-4f4d-
 | 00:18 | Language translator section |
 | 00:57 | API endpoint |
 | 01:30 | Language charter |
-
-  
-  
-  
   
 </details>
-
-
-
-
